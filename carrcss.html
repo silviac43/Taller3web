@@ -1,0 +1,415 @@
+<!DOCTYPE html <head>
+    <title>Registro de Carros</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <style type="text/css">
+      body {
+        font: 13px/1.6 Tahoma, sans-serif;
+        background: #F5F5F5;
+      }
+    
+      .izquierda {
+        float: left;
+        clear: left;
+      }
+    
+      .derecha {
+        float: right;
+        clear: right;
+      }
+    
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    
+      #contenedor {
+        background: #FFF;
+        border: 1px solid silver;
+        margin: 1em auto;
+        padding: 1em;
+        width: 768px;
+      }
+    
+      span.requerido {
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #C00;
+      }
+    
+      h2 {
+        font: normal 2em arial, sans-serif;
+        margin: 0;
+      }
+    
+      ul li.botones {
+        border-top: 2px solid #CCC;
+        clear: both;
+        float: none;
+        padding: 1em 0;
+        margin-top: 1em;
+        text-align: right;
+        width: 100%;
+      }
+    
+      ul li.botones input {
+        font-size: 1.3em;
+      }
+    
+      ul li {
+        margin: 0.5em 0;
+        padding: 0.5em;
+        width: 46%;
+      }
+    
+      ul li label.titulo {
+        font-weight: bold;
+      }
+    
+      ul li div span {
+        float: left;
+        padding: 0.3em 0;
+      }
+    
+      ul li div span.completo {
+        width: 100%;
+      }
+    
+      ul li div span.mitad {
+        width: 50%;
+      }
+    
+      ul li div span.tercio {
+        width: 33%;
+      }
+    
+      ul li div span.dostercios {
+        width: 66%;
+      }
+    
+      ul li div span label {
+        display: block;
+        font: normal 0.8em arial, sans-serif;
+        color: #333;
+      }
+    
+      ul li input {
+        padding: 0.2em;
+      }
+    
+      input#pais,
+      input#combustible,
+      input#tipodecoche,
+      input#estado,
+      input#marca,
+      input#user {
+        width: 200px;
+      }
+    
+      input#modelo,
+      input#anio,
+      input#detalle,
+      input#caja,
+      input#motor,
+      input#fechapub,
+      input#precio,
+      input#moneda {
+        width: 180px;
+      }
+
+      input#desc1,
+      input#desc2,
+      input#desc3,
+      input#dest {
+        width: 300px;
+      }
+    
+    
+      ul li.botones:hover {
+        background-color: transparent;
+      }
+    
+    
+    
+      ul li.izquierda,
+      ul li.derecha {
+        float: none;
+        width: auto;
+      }
+    
+      ul li {
+        overflow: hidden;
+      }
+    
+      ul li label.titulo {
+        float: left;
+        width: 150px;
+      }
+    
+      ul li div {
+        margin-left: 160px;
+      }
+    
+    
+      h2 {
+        margin-bottom: 0.3em;
+      }
+    
+      ul li {
+        border-top: 1px solid #CCC;
+        margin: 0;
+        padding: 1em;
+      }
+    
+      ul li.botones {
+        margin: 0;
+      }
+    
+      ul li label.titulo {
+        text-align: right;
+        width: 100px;
+      }
+    
+      ul li div {
+        margin-left: 110px;
+        overflow: hidden;
+      }
+    
+      ul li {
+        position: relative;
+      }
+    </style>
+    </head>
+    
+ <body>
+   <div id="contenedor">
+    
+      <h2>Registro de carros</h2>
+    
+        <form method="post" action="#">
+           <ul>
+    
+            <li class="derecha">
+              <label class="titulo" for="direccion">Información Básica<span class="requerido">*</span></label>
+    
+              <div>
+              
+                <span class="tercio">
+                    <select id="pais" name="pais">
+                      <option disabled selected value> --Seleciona-- </option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Bolivia">Bolivia</option>
+                      <option value="Brasil">Brasil</option>
+                      <option value="Chile">Chile</option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Costa Rica">Costa Rica</option>
+                      <option value="Cuba">Cuba</option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="El Salvador">El Salvador</option>
+                      <option value="España">España</option>
+                      <option value="Estados Unidos">Estados Unidos</option>
+                      <option value="Guatemala">Guatemala</option>
+                      <option value="Honduras">Honduras</option>
+                      <option value="México">México</option>
+                      <option value="Nicaragua">Nicaragua</option>
+                      <option value="Panamá">Panamá</option>
+                      <option value="Paraguay">Paraguay</option>
+                      <option value="Perú">Perú</option>
+                      <option value="Puerto Rico">Puerto Rico</option>
+                      <option value="República Dominicana">República Dominicana</option>
+                      <option value="Uruguay">Uruguay</option>
+                      <option value="Venezuela">Venezuela</option>
+                      <option value="Alemania">Alemania</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Austria">Austria</option>
+                      <option value="Bélgica">Bélgica</option>
+                      <option value="Canadá">Canadá</option>
+                      <option value="China">China</option>
+                      <option value="Corea del Sur">Corea del Sur</option>
+                      <option value="Dinamarca">Dinamarca</option>
+                      <option value="Emiratos Árabes Unidos">Emiratos Árabes Unidos</option>
+                      <option value="Filipinas">Filipinas</option>
+                      <option value="Finlandia">Finlandia</option>
+                      <option value="Francia">Francia</option>
+                      <option value="Grecia">Grecia</option>
+                      <option value="Irlanda">Irlanda</option>
+                      <option value="Italia">Italia</option>
+                      <option value="Japón">Japón</option>
+                      <option value="Malasia">Malasia</option>
+                      <option value="Noruega">Noruega</option>
+                      <option value="Países Bajos">Países Bajos</option>
+                      <option value="Portugal">Portugal</option>
+                      <option value="Reino Unido">Reino Unido</option>
+                      <option value="Rusia">Rusia</option>
+                      <option value="Singapur">Singapur</option>
+                      <option value="Suecia">Suecia</option>
+                      <option value="Suiza">Suiza</option>
+                    </select>
+                    <label for="pais">País</label>
+                  </span>
+
+                <span class="dostercio">
+                  <select id="combustible" name="combustible">
+                    <option disabled selected value> Seleciona </option>
+                    <option value="Gasolina">Gasolina</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Electrico">Electrico</option>
+                  </select>
+                  <label for="combustible">Combustible</label>
+                </span>
+                <br>
+                <br>
+                
+                <span class="trestercio">
+                    <select id="tipocoche" name="tipocoche">
+                      <option disabled selected value> Seleciona </option>
+                      <option value="Moto">Moto</option>
+                      <option value="Convertible">Convertible</option>
+                      <option value="Camioneta">Camioneta</option>
+                      <option value="Minibus">Minibus</option>
+                      <option value="Bus">Bus</option>
+                    </select>
+                    <label for="tipodecoche">Tipo de coche</label>
+                  </span>
+
+                  <br>
+                  <br>
+                
+                <span class="cuatrotercio">
+                    <select id="estado" name="estado">
+                      <option disabled selected value> Seleciona </option>
+                      <option value="Nuevo">Nuevo</option>
+                      <option value="Seminuevo">Seminuevo</option>
+                      <option value="Usado">Usado</option>
+                    </select>
+                    <label for="estado">Estado</label>
+                  </span>
+
+                  <br>
+                  <br>
+                
+                <span class="cincotercio">
+                    <select id="marca" name="marca">
+                      <option disabled selected value> Seleciona </option>
+                      <option value="Chevrolet">Chevrolet</option>
+                      <option value="Ford">Ford</option>
+                      <option value="Kia">Kia</option>
+                      <option value="Renault">Renault</option>
+                      <option value="Audi">Audi</option>
+                      <option value="Mercedes">Mercedes</option>
+                      <option value="Ssangyong">Ssangyong</option>
+                      <option value="Toyota">Toyota</option>
+                      <option value="Bugatti">Bugatti</option>
+                      <option value="Mazda">Mazda</option>
+                      <option value="Volvo">Volvo</option>
+                      <option value="Hyundai">Hyundai</option>
+                      <option value="Citroen">Citroen</option>
+                      <option value="Lamborghini">Lamborguini</option>
+                      <option value="Ferrari">Ferrari</option>
+                      <option value="Tesla">Tesla</option>
+                    </select>
+                    <label for="marca">Marca</label>
+                  </span>
+
+              </div>
+            </li>
+    
+            <li class="izquierda">
+              <label class="titulo" for="nombre">Caracteristicas <span class="requerido">*</span></label>
+              <div>
+                <span class="completo">
+                  <input id="modelo" name="modelo" value="" />
+                  <label for="modelo">Modelo</label>
+                </span>
+    
+                <span class="completo">
+                  <input id="anio" name="anio" value="" />
+                  <label for="anio">Año</label>
+                </span>
+        
+                <span class="completo">
+                  <input id="detalle" id="detalle" name="usuario" value="" />
+                  <label for="detalle">Detalle</label>
+                </span>
+    
+                <span class="completo">
+                  <input id="caja" id="caja" name="conf contrasena" value="" />
+                  <label for="caja">Caja</label>
+                </span>
+
+                <span class="completo">
+                    <input id="motor" id="motor" name="usuario" value="" />
+                    <label for="motor">motor</label>
+                </span>
+      
+                <span class="completo">
+                    <input id="fechapub" id="fechapub" name="conf contrasena" value="" />
+                    <label for="fechapub">Fecha de publicación</label>
+                </span>
+
+                <span class="completo">
+                    <input id="precio" id="precio" name="conf contrasena" value="" />
+                    <label for="precio">Precio</label>
+                  </span>
+  
+                  <span class="completo">
+                      <input id="moneda" id="moneda" name="usuario" value="" />
+                      <label for="moneda">Moneda</label>
+                  </span>
+              </div>
+            </li>
+    
+            <li class="derecha">
+              <label class="titulo" for="Descripcion">Descripción <span class="requerido">*</span></label>
+    
+              <div>
+                <span class="mitad">
+                  <input id="desc1" name="desc1" value="" />
+                  <label for="desc1">Descripción 1</label>
+                </span>
+    
+                <br>
+                <br>
+                <br>
+
+                <span class="mitad">
+                  <input id="desc2" name="desc2" value="" />
+                  <label for="desc2">Descripción 2</label>
+                </span>
+
+                <br>
+                <br>
+                <br>
+
+                <span class="mitad">
+                    <input id="desc3" name="desc3" value="" />
+                    <label for="desc3">Descripción 3</label>
+                  </span>
+              </div>
+            </li>
+
+            <li class="derecha">
+                <label class="titulo" for="dest">Destacado <span class=""></span></label>
+      
+                <div>
+                  <span class="mitad">
+                    <input id="dest" name="dest" value="" />
+                    <label for="dest">Destacado</label>
+                  </span>
+
+                </div>
+            </li>
+    
+    
+            <li class="botones">
+              <input id="registro" type="submit" value="Registrar" />
+            </li>
+    
+          </ul>
+        </form>
+    
+      </div>
+    </body>
+    
+</html>

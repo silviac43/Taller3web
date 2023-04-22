@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <title>Registro de carros</title>
+</head>
+
+<body>
+    <div class="container-sm p-3 my-5 border">
+
+        <form class="well form-horizontal" action=" " method="post">
+            <fieldset>
+
+                <legend><h2>Registro de carros</h2></legend>
+
+                <form action="/cv/dataCV" method="post" enctype="multipart/form-data">
+                    
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Tipo de coche</label>
+                        <div class="col-md-4 selectContainer">
+                            <div class="input-group">
+                                <select name="provincia" class="form-control selectpicker">
+                                    <option disabled selected value> --Seleciona-- </option>
+                                    <option value="Moto">Moto</option>
+                                    <option value="Convertible">Convertible</option>
+                                    <option value="Camioneta">Camioneta</option>
+                                    <option value="Minibus">Minibus</option>
+                                    <option value="Bus">Bus</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">País</label>
+                        <div class="col-md-4 selectContainer">
+                            <div class="input-group">
+                                <select name="state" class="form-control selectpicker">
+                                    <option disabled selected value> --Selecciona un país-- </option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Bolivia">Bolivia</option>
+                                    <option value="Brasil">Brasil</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Cuba">Cuba</option>
+                                    <option value="Ecuador">Ecuador</option>
+                                    <option value="El Salvador">El Salvador</option>
+                                    <option value="España">España</option>
+                                    <option value="Estados Unidos">Estados Unidos</option>
+                                    <option value="Guatemala">Guatemala</option>
+                                    <option value="Honduras">Honduras</option>
+                                    <option value="México">México</option>
+                                    <option value="Nicaragua">Nicaragua</option>
+                                    <option value="Panamá">Panamá</option>
+                                    <option value="Paraguay">Paraguay</option>
+                                    <option value="Perú">Perú</option>
+                                    <option value="Puerto Rico">Puerto Rico</option>
+                                    <option value="República Dominicana">República Dominicana</option>
+                                    <option value="Uruguay">Uruguay</option>
+                                    <option value="Venezuela">Venezuela</option>
+                                    <option value="Alemania">Alemania</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Bélgica">Bélgica</option>
+                                    <option value="Canadá">Canadá</option>
+                                    <option value="China">China</option>
+                                    <option value="Corea del Sur">Corea del Sur</option>
+                                    <option value="Dinamarca">Dinamarca</option>
+                                    <option value="Emiratos Árabes Unidos">Emiratos Árabes Unidos</option>
+                                    <option value="Filipinas">Filipinas</option>
+                                    <option value="Finlandia">Finlandia</option>
+                                    <option value="Francia">Francia</option>
+                                    <option value="Grecia">Grecia</option>
+                                    <option value="Irlanda">Irlanda</option>
+                                    <option value="Italia">Italia</option>
+                                    <option value="Japón">Japón</option>
+                                    <option value="Malasia">Malasia</option>
+                                    <option value="Noruega">Noruega</option>
+                                    <option value="Países Bajos">Países Bajos</option>
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="Reino Unido">Reino Unido</option>
+                                    <option value="Rusia">Rusia</option>
+                                    <option value="Singapur">Singapur</option>
+                                    <option value="Suecia">Suecia</option>
+                                    <option value="Suiza">Suiza</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Combustible</label>
+                        <div class="col-md-4 selectContainer">
+                            <div class="input-group">
+                                <select name="combustible" class="form-control selectpicker">
+                                    <option disabled selected value> --Seleciona-- </option>
+                                    <option value="Gasolina">Gasolina</option>
+                                    <option value="Diesel">Diesel</option>
+                                    <option value="Electrico">Electrico</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Estado</label>
+                        <div class="col-md-4 selectContainer">
+                            <div class="input-group">
+                                <select name="estado" class="form-control selectpicker">
+                                    <option disabled selected value> --Seleciona-- </option>
+                                    <option value="Nuevo">Nuevo</option>
+                                    <option value="Seminuevo">Seminuevo</option>
+                                    <option value="Usado">Usado</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Marca</label>
+                        <div class="col-md-4 selectContainer">
+                            <div class="input-group">
+                                <select name="marca" class="form-control selectpicker">
+                                    <option disabled selected value> --Seleciona-- </option>
+                                    <option value="Chevrolet">Chevrolet</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Kia">Kia</option>
+                                    <option value="Renault">Renault</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Mercedes">Mercedes</option>
+                                    <option value="Ssangyong">Ssangyong</option>
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Bugatti">Bugatti</option>
+                                    <option value="Mazda">Mazda</option>
+                                    <option value="Volvo">Volvo</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="Citroen">Citroen</option>
+                                    <option value="Lamborghini">Lamborguini</option>
+                                    <option value="Ferrari">Ferrari</option>
+                                    <option value="Tesla">Tesla</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Modelo</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="modelo" placeholder="Modelo" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Año</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="anio" placeholder="Anio" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Detalle</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="detalle" placeholder="Detalle" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Caja</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="postal" placeholder="Código postal" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Motor</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="motor" placeholder="Motor" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Fecha de publicación</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="fechapub" placeholder="Fechapub" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Precio</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="precio" placeholder="Precio" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Moneda</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="moneda" placeholder="Moneda" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Descripción 1</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="desc1" placeholder="Desc1" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Descripción 2</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="desc2" placeholder="Desc2" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Descripción 3</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="desc3" placeholder="Desc3" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <label class="col-md-4 control-label">Destacado</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <input name="dest" placeholder="Dest" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="d-flex justify-content-center">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-warning">Registrar<span
+                                class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
